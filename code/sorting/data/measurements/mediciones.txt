@@ -1,160 +1,256 @@
 caso: 1000_aleatorio_D1_a.txt
-mergesort_tiempo: 0.413491 ms
-quicksort_tiempo: 0.152497 ms
-std_sort_tiempo: 0.103262 ms
+mergesort_tiempo: 0.358801 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.167163 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.114898 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_aleatorio_D1_b.txt
-mergesort_tiempo: 0.326704 ms
-quicksort_tiempo: 0.156565 ms
-std_sort_tiempo: 0.161342 ms
+mergesort_tiempo: 0.400523 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.170451 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.119683 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_aleatorio_D1_c.txt
-mergesort_tiempo: 0.334244 ms
-quicksort_tiempo: 0.162176 ms
-std_sort_tiempo: 0.109103 ms
+mergesort_tiempo: 0.364825 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.168256 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.12141 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_aleatorio_D7_a.txt
-mergesort_tiempo: 0.365937 ms
-quicksort_tiempo: 0.109443 ms
-std_sort_tiempo: 0.143873 ms
+mergesort_tiempo: 0.386793 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.120198 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.156198 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_aleatorio_D7_b.txt
-mergesort_tiempo: 0.357708 ms
-quicksort_tiempo: 0.129877 ms
-std_sort_tiempo: 0.145288 ms
+mergesort_tiempo: 0.370915 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.124404 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.156611 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_aleatorio_D7_c.txt
-mergesort_tiempo: 0.360996 ms
-quicksort_tiempo: 0.145058 ms
-std_sort_tiempo: 0.150972 ms
+mergesort_tiempo: 0.389806 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.115339 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.161671 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_ascendente_D1_a.txt
-mergesort_tiempo: 0.310935 ms
-quicksort_tiempo: 0.173381 ms
-std_sort_tiempo: 0.084518 ms
+mergesort_tiempo: 0.341168 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.182509 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.095438 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_ascendente_D1_b.txt
-mergesort_tiempo: 0.315977 ms
-quicksort_tiempo: 0.17664 ms
-std_sort_tiempo: 0.097321 ms
+mergesort_tiempo: 0.339882 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.195862 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.094988 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_ascendente_D1_c.txt
-mergesort_tiempo: 0.319164 ms
-quicksort_tiempo: 0.179074 ms
-std_sort_tiempo: 0.084886 ms
+mergesort_tiempo: 0.336953 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.182822 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.092976 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_ascendente_D7_a.txt
-mergesort_tiempo: 0.315967 ms
-quicksort_tiempo: 5.14578 ms
-std_sort_tiempo: 0.084564 ms
+mergesort_tiempo: 0.345539 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 5.47851 ms
+quicksort_memoria: 128 KB
+std_sort_tiempo: 0.090892 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_ascendente_D7_b.txt
-mergesort_tiempo: 0.310338 ms
-quicksort_tiempo: 5.06067 ms
-std_sort_tiempo: 0.080487 ms
+mergesort_tiempo: 0.334418 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 5.38697 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.091269 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_ascendente_D7_c.txt
-mergesort_tiempo: 0.312405 ms
-quicksort_tiempo: 5.19203 ms
-std_sort_tiempo: 0.084105 ms
+mergesort_tiempo: 0.338689 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 5.45514 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.105733 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_descendente_D1_a.txt
-mergesort_tiempo: 0.337357 ms
-quicksort_tiempo: 0.188598 ms
-std_sort_tiempo: 0.093123 ms
+mergesort_tiempo: 0.353227 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.196634 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.103556 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_descendente_D1_b.txt
-mergesort_tiempo: 0.32168 ms
-quicksort_tiempo: 0.186404 ms
-std_sort_tiempo: 0.092471 ms
+mergesort_tiempo: 0.354981 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.196238 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.104456 ms
+std_sort_memoria: 0 KB
 
 caso: 1000_descendente_D1_c.txt
-mergesort_tiempo: 0.332049 ms
-quicksort_tiempo: 0.192051 ms
-std_sort_tiempo: 0.092379 ms
+mergesort_tiempo: 0.38604 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.196524 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.103823 ms
+std_sort_memoria: 0 KB
 
 caso: 10_aleatorio_D1_a.txt
-mergesort_tiempo: 0.004216 ms
-quicksort_tiempo: 0.000717 ms
-std_sort_tiempo: 0.001984 ms
+mergesort_tiempo: 0.004049 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000771 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.002498 ms
+std_sort_memoria: 0 KB
 
 caso: 10_aleatorio_D1_b.txt
-mergesort_tiempo: 0.003857 ms
-quicksort_tiempo: 0.000597 ms
-std_sort_tiempo: 0.001644 ms
+mergesort_tiempo: 0.004023 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000652 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001662 ms
+std_sort_memoria: 0 KB
 
 caso: 10_aleatorio_D1_c.txt
-mergesort_tiempo: 0.003802 ms
-quicksort_tiempo: 0.000753 ms
-std_sort_tiempo: 0.001928 ms
+mergesort_tiempo: 0.00405 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000762 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.0018 ms
+std_sort_memoria: 0 KB
 
 caso: 10_aleatorio_D7_a.txt
-mergesort_tiempo: 0.003912 ms
-quicksort_tiempo: 0.000607 ms
-std_sort_tiempo: 0.002112 ms
+mergesort_tiempo: 0.003838 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000679 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001957 ms
+std_sort_memoria: 0 KB
 
 caso: 10_aleatorio_D7_b.txt
-mergesort_tiempo: 0.00382 ms
-quicksort_tiempo: 0.000652 ms
-std_sort_tiempo: 0.002121 ms
+mergesort_tiempo: 0.003885 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000836 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.002287 ms
+std_sort_memoria: 0 KB
 
 caso: 10_aleatorio_D7_c.txt
-mergesort_tiempo: 0.004114 ms
-quicksort_tiempo: 0.000579 ms
-std_sort_tiempo: 0.002287 ms
+mergesort_tiempo: 0.003885 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.00068 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001947 ms
+std_sort_memoria: 0 KB
 
 caso: 10_ascendente_D1_a.txt
-mergesort_tiempo: 0.003692 ms
-quicksort_tiempo: 0.000753 ms
-std_sort_tiempo: 0.00134 ms
+mergesort_tiempo: 0.003664 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000836 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001332 ms
+std_sort_memoria: 0 KB
 
 caso: 10_ascendente_D1_b.txt
-mergesort_tiempo: 0.003692 ms
-quicksort_tiempo: 0.000688 ms
-std_sort_tiempo: 0.001295 ms
+mergesort_tiempo: 0.003728 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000716 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001294 ms
+std_sort_memoria: 0 KB
 
 caso: 10_ascendente_D1_c.txt
-mergesort_tiempo: 0.003757 ms
-quicksort_tiempo: 0.000616 ms
-std_sort_tiempo: 0.001323 ms
+mergesort_tiempo: 0.003949 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000661 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001258 ms
+std_sort_memoria: 0 KB
 
 caso: 10_ascendente_D7_a.txt
-mergesort_tiempo: 0.003912 ms
-quicksort_tiempo: 0.000873 ms
-std_sort_tiempo: 0.001222 ms
+mergesort_tiempo: 0.004253 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000937 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001249 ms
+std_sort_memoria: 0 KB
 
 caso: 10_ascendente_D7_b.txt
-mergesort_tiempo: 0.003581 ms
-quicksort_tiempo: 0.000863 ms
-std_sort_tiempo: 0.001359 ms
+mergesort_tiempo: 0.003803 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000937 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.002672 ms
+std_sort_memoria: 0 KB
 
 caso: 10_ascendente_D7_c.txt
-mergesort_tiempo: 0.0036 ms
-quicksort_tiempo: 0.000872 ms
-std_sort_tiempo: 0.001323 ms
+mergesort_tiempo: 0.003775 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000965 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001286 ms
+std_sort_memoria: 0 KB
 
 caso: 10_descendente_D1_a.txt
-mergesort_tiempo: 0.003848 ms
-quicksort_tiempo: 0.000615 ms
+mergesort_tiempo: 0.004068 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000716 ms
+quicksort_memoria: 0 KB
 std_sort_tiempo: 0.00214 ms
+std_sort_memoria: 0 KB
 
 caso: 10_descendente_D1_b.txt
-mergesort_tiempo: 0.003738 ms
-quicksort_tiempo: 0.000679 ms
-std_sort_tiempo: 0.001929 ms
+mergesort_tiempo: 0.004197 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000744 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001892 ms
+std_sort_memoria: 0 KB
 
 caso: 10_descendente_D1_c.txt
-mergesort_tiempo: 0.003912 ms
-quicksort_tiempo: 0.000808 ms
-std_sort_tiempo: 0.002085 ms
+mergesort_tiempo: 0.004022 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000836 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.002269 ms
+std_sort_memoria: 0 KB
 
 caso: 10_descendente_D7_a.txt
-mergesort_tiempo: 0.00349 ms
-quicksort_tiempo: 0.000762 ms
-std_sort_tiempo: 0.001828 ms
+mergesort_tiempo: 0.003839 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.001129 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001928 ms
+std_sort_memoria: 0 KB
 
 caso: 10_descendente_D7_b.txt
-mergesort_tiempo: 0.003682 ms
-quicksort_tiempo: 0.000781 ms
-std_sort_tiempo: 0.001818 ms
+mergesort_tiempo: 0.003839 ms
+mergesort_memoria: 0 KB
+quicksort_tiempo: 0.000845 ms
+quicksort_memoria: 0 KB
+std_sort_tiempo: 0.001708 ms
+std_sort_memoria: 0 KB
 
