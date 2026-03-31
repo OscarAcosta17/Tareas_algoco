@@ -1,0 +1,160 @@
+caso: 1000_aleatorio_D1_a.txt
+mergesort_tiempo: 0.413491 ms
+quicksort_tiempo: 0.152497 ms
+std_sort_tiempo: 0.103262 ms
+
+caso: 1000_aleatorio_D1_b.txt
+mergesort_tiempo: 0.326704 ms
+quicksort_tiempo: 0.156565 ms
+std_sort_tiempo: 0.161342 ms
+
+caso: 1000_aleatorio_D1_c.txt
+mergesort_tiempo: 0.334244 ms
+quicksort_tiempo: 0.162176 ms
+std_sort_tiempo: 0.109103 ms
+
+caso: 1000_aleatorio_D7_a.txt
+mergesort_tiempo: 0.365937 ms
+quicksort_tiempo: 0.109443 ms
+std_sort_tiempo: 0.143873 ms
+
+caso: 1000_aleatorio_D7_b.txt
+mergesort_tiempo: 0.357708 ms
+quicksort_tiempo: 0.129877 ms
+std_sort_tiempo: 0.145288 ms
+
+caso: 1000_aleatorio_D7_c.txt
+mergesort_tiempo: 0.360996 ms
+quicksort_tiempo: 0.145058 ms
+std_sort_tiempo: 0.150972 ms
+
+caso: 1000_ascendente_D1_a.txt
+mergesort_tiempo: 0.310935 ms
+quicksort_tiempo: 0.173381 ms
+std_sort_tiempo: 0.084518 ms
+
+caso: 1000_ascendente_D1_b.txt
+mergesort_tiempo: 0.315977 ms
+quicksort_tiempo: 0.17664 ms
+std_sort_tiempo: 0.097321 ms
+
+caso: 1000_ascendente_D1_c.txt
+mergesort_tiempo: 0.319164 ms
+quicksort_tiempo: 0.179074 ms
+std_sort_tiempo: 0.084886 ms
+
+caso: 1000_ascendente_D7_a.txt
+mergesort_tiempo: 0.315967 ms
+quicksort_tiempo: 5.14578 ms
+std_sort_tiempo: 0.084564 ms
+
+caso: 1000_ascendente_D7_b.txt
+mergesort_tiempo: 0.310338 ms
+quicksort_tiempo: 5.06067 ms
+std_sort_tiempo: 0.080487 ms
+
+caso: 1000_ascendente_D7_c.txt
+mergesort_tiempo: 0.312405 ms
+quicksort_tiempo: 5.19203 ms
+std_sort_tiempo: 0.084105 ms
+
+caso: 1000_descendente_D1_a.txt
+mergesort_tiempo: 0.337357 ms
+quicksort_tiempo: 0.188598 ms
+std_sort_tiempo: 0.093123 ms
+
+caso: 1000_descendente_D1_b.txt
+mergesort_tiempo: 0.32168 ms
+quicksort_tiempo: 0.186404 ms
+std_sort_tiempo: 0.092471 ms
+
+caso: 1000_descendente_D1_c.txt
+mergesort_tiempo: 0.332049 ms
+quicksort_tiempo: 0.192051 ms
+std_sort_tiempo: 0.092379 ms
+
+caso: 10_aleatorio_D1_a.txt
+mergesort_tiempo: 0.004216 ms
+quicksort_tiempo: 0.000717 ms
+std_sort_tiempo: 0.001984 ms
+
+caso: 10_aleatorio_D1_b.txt
+mergesort_tiempo: 0.003857 ms
+quicksort_tiempo: 0.000597 ms
+std_sort_tiempo: 0.001644 ms
+
+caso: 10_aleatorio_D1_c.txt
+mergesort_tiempo: 0.003802 ms
+quicksort_tiempo: 0.000753 ms
+std_sort_tiempo: 0.001928 ms
+
+caso: 10_aleatorio_D7_a.txt
+mergesort_tiempo: 0.003912 ms
+quicksort_tiempo: 0.000607 ms
+std_sort_tiempo: 0.002112 ms
+
+caso: 10_aleatorio_D7_b.txt
+mergesort_tiempo: 0.00382 ms
+quicksort_tiempo: 0.000652 ms
+std_sort_tiempo: 0.002121 ms
+
+caso: 10_aleatorio_D7_c.txt
+mergesort_tiempo: 0.004114 ms
+quicksort_tiempo: 0.000579 ms
+std_sort_tiempo: 0.002287 ms
+
+caso: 10_ascendente_D1_a.txt
+mergesort_tiempo: 0.003692 ms
+quicksort_tiempo: 0.000753 ms
+std_sort_tiempo: 0.00134 ms
+
+caso: 10_ascendente_D1_b.txt
+mergesort_tiempo: 0.003692 ms
+quicksort_tiempo: 0.000688 ms
+std_sort_tiempo: 0.001295 ms
+
+caso: 10_ascendente_D1_c.txt
+mergesort_tiempo: 0.003757 ms
+quicksort_tiempo: 0.000616 ms
+std_sort_tiempo: 0.001323 ms
+
+caso: 10_ascendente_D7_a.txt
+mergesort_tiempo: 0.003912 ms
+quicksort_tiempo: 0.000873 ms
+std_sort_tiempo: 0.001222 ms
+
+caso: 10_ascendente_D7_b.txt
+mergesort_tiempo: 0.003581 ms
+quicksort_tiempo: 0.000863 ms
+std_sort_tiempo: 0.001359 ms
+
+caso: 10_ascendente_D7_c.txt
+mergesort_tiempo: 0.0036 ms
+quicksort_tiempo: 0.000872 ms
+std_sort_tiempo: 0.001323 ms
+
+caso: 10_descendente_D1_a.txt
+mergesort_tiempo: 0.003848 ms
+quicksort_tiempo: 0.000615 ms
+std_sort_tiempo: 0.00214 ms
+
+caso: 10_descendente_D1_b.txt
+mergesort_tiempo: 0.003738 ms
+quicksort_tiempo: 0.000679 ms
+std_sort_tiempo: 0.001929 ms
+
+caso: 10_descendente_D1_c.txt
+mergesort_tiempo: 0.003912 ms
+quicksort_tiempo: 0.000808 ms
+std_sort_tiempo: 0.002085 ms
+
+caso: 10_descendente_D7_a.txt
+mergesort_tiempo: 0.00349 ms
+quicksort_tiempo: 0.000762 ms
+std_sort_tiempo: 0.001828 ms
+
+caso: 10_descendente_D7_b.txt
+mergesort_tiempo: 0.003682 ms
+quicksort_tiempo: 0.000781 ms
+std_sort_tiempo: 0.001818 ms
+
