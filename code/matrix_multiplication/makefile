@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -O3 -std=c++11
+CXXFLAGS = -Wall -Wextra -O3 -std=c++17
 TARGET = matrix_multiplication
 
 SRCS = matrix_multiplication.cpp algorithms/naive.cpp algorithms/strassen.cpp

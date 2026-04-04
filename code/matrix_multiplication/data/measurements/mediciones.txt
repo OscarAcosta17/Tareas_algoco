@@ -1,0 +1,216 @@
+caso: 16_densa_D0_a
+naive_tiempo: 0.003967 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.34788 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_densa_D0_b
+naive_tiempo: 0.005914 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.25236 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_densa_D0_c
+naive_tiempo: 0.006015 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.28571 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_densa_D10_a
+naive_tiempo: 0.0072 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.34593 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_densa_D10_b
+naive_tiempo: 0.006658 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.31742 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_densa_D10_c
+naive_tiempo: 0.006493 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.25523 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_diagonal_D0_a
+naive_tiempo: 0.007411 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.34955 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_diagonal_D0_b
+naive_tiempo: 0.006052 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.26705 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_diagonal_D0_c
+naive_tiempo: 0.006557 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.31043 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_diagonal_D10_a
+naive_tiempo: 0.009092 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.29696 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_diagonal_D10_b
+naive_tiempo: 0.006878 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.28572 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_diagonal_D10_c
+naive_tiempo: 0.007843 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.43113 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_dispersa_D0_a
+naive_tiempo: 0.006934 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.39622 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_dispersa_D0_b
+naive_tiempo: 0.006887 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.29018 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_dispersa_D0_c
+naive_tiempo: 0.006171 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.25001 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_dispersa_D10_a
+naive_tiempo: 0.006181 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.25749 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_dispersa_D10_b
+naive_tiempo: 0.006245 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.3255 ms
+strassen_memoria: 21856 Bytes
+
+caso: 16_dispersa_D10_c
+naive_tiempo: 0.007677 ms
+naive_memoria: 1472 Bytes
+strassen_tiempo: 1.26284 ms
+strassen_memoria: 21856 Bytes
+
+caso: 64_densa_D0_a
+naive_tiempo: 0.160229 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 63.4567 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_densa_D0_b
+naive_tiempo: 0.175402 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 64.8038 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_densa_D0_c
+naive_tiempo: 0.143432 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 65.1361 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_densa_D10_a
+naive_tiempo: 0.176999 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 64.747 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_densa_D10_b
+naive_tiempo: 0.173023 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 69.7204 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_densa_D10_c
+naive_tiempo: 0.14459 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 64.5065 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_diagonal_D0_a
+naive_tiempo: 0.14009 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 67.2606 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_diagonal_D0_b
+naive_tiempo: 0.148318 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 64.4378 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_diagonal_D0_c
+naive_tiempo: 0.141099 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 64.2275 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_diagonal_D10_a
+naive_tiempo: 0.164032 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 65.836 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_diagonal_D10_b
+naive_tiempo: 0.145756 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 63.9484 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_diagonal_D10_c
+naive_tiempo: 0.144259 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 62.7189 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_dispersa_D0_a
+naive_tiempo: 0.14368 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 63.0973 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_dispersa_D0_b
+naive_tiempo: 0.16495 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 67.338 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_dispersa_D0_c
+naive_tiempo: 0.179772 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 65.8322 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_dispersa_D10_a
+naive_tiempo: 0.139952 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 64.7777 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_dispersa_D10_b
+naive_tiempo: 0.14615 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 64.9323 ms
+strassen_memoria: 236128 Bytes
+
+caso: 64_dispersa_D10_c
+naive_tiempo: 0.20625 ms
+naive_memoria: 18176 Bytes
+strassen_tiempo: 62.473 ms
+strassen_memoria: 236128 Bytes
+

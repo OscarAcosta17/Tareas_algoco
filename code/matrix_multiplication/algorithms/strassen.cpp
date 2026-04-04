@@ -15,12 +15,11 @@ int nextPowerOfTwo(int n) {
 
 // Resize a matrix to newR x newC and 
 // fill extra space with zeros
-vector<vector<int>> resizeMatrix(vector<vector<int>> &mat, 
-                                        int newR, int newC) {
-                                            
+vector<vector<int>> resizeMatrix(vector<vector<int>> &mat, int newR, int newC) {                                            
     vector<vector<int>> resized(newR, vector<int>(newC, 0));
-    for (int i = 0; i < mat.size(); ++i)
-        for (int j = 0; j < mat[0].size(); ++j)
+    
+    for (size_t i = 0; i < mat.size(); ++i)
+        for (size_t j = 0; j < mat[0].size(); ++j)
             resized[i][j] = mat[i][j];
             
     return resized;

@@ -1,54 +1,43 @@
 /*
 Fuente:
-GeeksforGeeks - Matrix Multiplication in C/C++
-https://www.geeksforgeeks.org/dsa/c-program-multiply-two-matrices/
+GeeksforGeeks - Program to multiply two matrices
+https://www.geeksforgeeks.org/c-plus-plus-program-to-multiply-two-matrices/
+Adaptado para retornar el vector resultante.
 */
-#include <stdio.h>
-#include <stdlib.h>
 
-#define R1 2 // number of rows in Matrix-1
-#define C1 2 // number of columns in Matrix-1
-#define R2 2 // number of rows in Matrix-2
-#define C2 2 // number of columns in Matrix-2
+#include <iostream>
+#include <vector>
 
-void mulMat(int (*m1)[C1], int (*m2)[C2], int (*rslt)[C2]) {
-    if (C1 != R2) {
-        printf("Invalid Input");
-        return;
-    }  
-      
-    for (int i = 0; i < R1; i++) {
-        for (int j = 0; j < C2; j++) {
-            rslt[i][j] = 0; // Initialize result matrix element
+using namespace std;
 
-            for (int k = 0; k < C1; k++) { // Use C1 for multiplication
-                rslt[i][j] += m1[i][k] * m2[k][j];
+// Función original de la fuente, manteniendo la lógica O(n^3)
+vector<vector<int>> naive_multiply(const vector<vector<int>>& row1, const vector<vector<int>>& row2) {
+    int n = row1.size();
+    vector<vector<int>> res(n, vector<int>(n, 0));
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            for (int k = 0; k < n; k++) {
+                res[i][j] += row1[i][k] * row2[k][j];
             }
         }
     }
+    return res;
 }
+
 /*
 int main() {
-    int m1[R1][C1] = { { 1, 1 },
-                       { 2, 2 } };
+    vector<vector<int>> row1 = { { 1, 1 }, { 2, 2 } };
+    vector<vector<int>> row2 = { { 1, 1 }, { 2, 2 } };
 
-    int m2[R2][C2] = { { 1, 1 },
-                       { 2, 2 } };
+    vector<vector<int>> res = naive_multiply(row1, row2);
 
-    int rslt[R1][C2]; // Result matrix
-
-    // Function call to multiply matrices
-    mulMat(m1, m2, rslt);
-
-    // Print the result matrix
-    printf("Result matrix is:\n");
-    for (int i = 0; i < R1; i++) {
-        for (int j = 0; j < C2; j++) {
-            printf("%d\t", rslt[i][j]);
-        }
-        printf("\n");
+    for (int i = 0; i < res.size(); i++) {
+        for (int j = 0; j < res[0].size(); j++)
+            cout << res[i][j] << " ";
+        cout << endl;
     }
 
     return 0;
-}*/
-
+}
+*/
