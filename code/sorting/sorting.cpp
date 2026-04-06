@@ -91,8 +91,7 @@ int main(){
         vector<int> arr_quick = arr;
         vector<int> arr_sort = arr;
 
-        // --- CÁLCULO DE MEMORIA (Aproximación algorítmica) ---
-        // Memoria base: lo que pesa el arreglo original en memoria
+        // --- CÁLCULO DE MEMORIA ---
         size_t memory_base = arr.capacity() * sizeof(int);
 
         // ================= MERGE SORT =================
@@ -102,7 +101,6 @@ int main(){
         auto fin_merge = chrono::high_resolution_clock::now();
         
         double tiempo_merge = chrono::duration<double, milli>(fin_merge - inicio_merge).count();
-        // MergeSort requiere arreglos temporales adicionales para mezclar O(n)
         size_t memoria_merge = memory_base + (arr.size() * sizeof(int));
         cout << " Listo! (" << tiempo_merge << " ms)\n";
 
@@ -113,7 +111,6 @@ int main(){
         auto fin_quick = chrono::high_resolution_clock::now();
         
         double tiempo_quick = chrono::duration<double, milli>(fin_quick - inicio_quick).count();
-        // QuickSort opera in-place, se queda solo con la memoria base
         size_t memoria_quick = memory_base;
         cout << " Listo! (" << tiempo_quick << " ms)\n";
 
@@ -124,7 +121,6 @@ int main(){
         auto fin_sort = chrono::high_resolution_clock::now();
         
         double tiempo_sort = chrono::duration<double, milli>(fin_sort - inicio_sort).count();
-        // std::sort también opera in-place
         size_t memoria_sort = memory_base;
         cout << " Listo! (" << tiempo_sort << " ms)\n";
 

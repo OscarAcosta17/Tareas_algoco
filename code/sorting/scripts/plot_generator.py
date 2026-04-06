@@ -27,7 +27,6 @@ def leer_datos():
                     
                 val_num = float(valor.split(' ')[0]) if metrica == 'tiempo' else int(valor.split(' ')[0])
                 
-                # Inicialización segura de los diccionarios paso a paso
                 datos.setdefault(metrica, {})
                 datos[metrica].setdefault(dom, {})
                 datos[metrica][dom].setdefault(algo, {})
