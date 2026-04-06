@@ -5,34 +5,9 @@
 #include <filesystem>
 #include <chrono>
 #include <algorithm>
-#include <cstdlib>
-#include <new>
 
 namespace fs = std::filesystem;
 using namespace std;
-
-long long memoria_actual = 0;
-long long memoria_peak = 0;
-
-void* operator new(size_t size) {
-    memoria_actual += size;
-    if (memoria_actual > memoria_peak) {
-        memoria_peak = memoria_actual;
-    }
-    void* ptr = malloc(size);
-    if (!ptr) throw std::bad_alloc();
-    return ptr;
-}
-
-void operator delete(void* ptr, size_t size) noexcept {
-    memoria_actual -= size;
-    free(ptr);
-}
-
-void operator delete(void* ptr) noexcept {
-    free(ptr);
-}
-// =====================================================================
 
 void run_mergesort(vector<int>& arr);
 void run_quicksort(vector<int>& arr);
@@ -116,40 +91,41 @@ int main(){
         vector<int> arr_quick = arr;
         vector<int> arr_sort = arr;
 
+        // --- CÁLCULO DE MEMORIA (Aproximación algorítmica) ---
+        // Memoria base: lo que pesa el arreglo original en memoria
+        size_t memory_base = arr.capacity() * sizeof(int);
+
         // ================= MERGE SORT =================
         cout << "  [*] Merge Sort..." << flush;
-        memoria_actual = 0; memoria_peak = 0;
-        
         auto inicio_merge = chrono::high_resolution_clock::now();
         run_mergesort(arr_merge);
         auto fin_merge = chrono::high_resolution_clock::now();
         
         double tiempo_merge = chrono::duration<double, milli>(fin_merge - inicio_merge).count();
-        size_t memoria_merge = memoria_peak;
+        // MergeSort requiere arreglos temporales adicionales para mezclar O(n)
+        size_t memoria_merge = memory_base + (arr.size() * sizeof(int));
         cout << " Listo! (" << tiempo_merge << " ms)\n";
 
         // ================= QUICK SORT =================
         cout << "  [*] Quick Sort..." << flush;
-        memoria_actual = 0; memoria_peak = 0; 
-        
         auto inicio_quick = chrono::high_resolution_clock::now();
         run_quicksort(arr_quick);
         auto fin_quick = chrono::high_resolution_clock::now();
         
         double tiempo_quick = chrono::duration<double, milli>(fin_quick - inicio_quick).count();
-        size_t memoria_quick = memoria_peak;
+        // QuickSort opera in-place, se queda solo con la memoria base
+        size_t memoria_quick = memory_base;
         cout << " Listo! (" << tiempo_quick << " ms)\n";
 
         // ================= SORT =================
         cout << "  [*] std::sort..." << flush;
-        memoria_actual = 0; memoria_peak = 0; 
-        
         auto inicio_sort = chrono::high_resolution_clock::now();
         arr_sort = sortArray(arr_sort);
         auto fin_sort = chrono::high_resolution_clock::now();
         
         double tiempo_sort = chrono::duration<double, milli>(fin_sort - inicio_sort).count();
-        size_t memoria_sort = memoria_peak;
+        // std::sort también opera in-place
+        size_t memoria_sort = memory_base;
         cout << " Listo! (" << tiempo_sort << " ms)\n";
 
         // ================= GUARDADO =================
