@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber report"] 1775504216.13441 "report.bcf" "report.bbl" "report" 1775570674.26676 0
-  "report.bcf" 1775570673 108551 66f4bafccad88a84f77b14c7778652d8 "pdflatex"
+["biber report"] 1775504216.13441 "report.bcf" "report.bbl" "report" 1775571000.98331 0
+  "report.bcf" 1775571000 108551 66f4bafccad88a84f77b14c7778652d8 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1775570670.80279 "c:/Users/oscar/OneDrive/Documentos/GitHub/Tareas_algoco/report/report.tex" "report.pdf" "report" 1775570674.26761 0
+["pdflatex"] 1775570997.33107 "c:/Users/oscar/OneDrive/Documentos/GitHub/Tareas_algoco/report/report.tex" "report.pdf" "report" 1775571000.98413 0
   "../code/matrix_multiplication/plots/memoria_vs_n_matrices.png" 1775490663 76827 ccde74166d38f1500eb693211e6f3dec ""
   "../code/matrix_multiplication/plots/tiempo_vs_n_matrices.png" 1775490662 86199 c1c0bd84b7dedae32a239b9737b7e76e ""
   "../code/sorting/plots/memoria_vs_n_D7.png" 1775494904 95145 073347fa6be1815d0b4b890dc898f7a4 ""
@@ -307,12 +307,12 @@
   "author.tex" 1775501439 486 8df70584656c7fa2596033b18c370575 ""
   "c:/Users/oscar/OneDrive/Documentos/GitHub/Tareas_algoco/report/report.tex" 1773692234 1062 91aa17fd16c6005eb4908cc926fc00d7 ""
   "preamble.tex" 1773692233 2163 4b0cc777241a9fa0f82b663d831cc656 ""
-  "report.aux" 1775570673 2910 f036c6c7cea354c77d03ef557fe662df "pdflatex"
+  "report.aux" 1775571000 2910 f036c6c7cea354c77d03ef557fe662df "pdflatex"
   "report.bbl" 1775504218 486 76d65a242ec496c9b4361af646ff12cb "biber report"
-  "report.out" 1775570673 785 8740bf9f730d924c1348f20c0e66fd6f "pdflatex"
-  "report.run.xml" 1775570673 2319 85416a11bf768be6a1e5b1dccfd5e02c "pdflatex"
+  "report.out" 1775571000 785 8740bf9f730d924c1348f20c0e66fd6f "pdflatex"
+  "report.run.xml" 1775571000 2319 85416a11bf768be6a1e5b1dccfd5e02c "pdflatex"
   "report.tex" 1773692234 1062 91aa17fd16c6005eb4908cc926fc00d7 ""
-  "sections/conclusions.tex" 1773692234 278 56040fbacf151362f720a9be978c90ce ""
+  "sections/conclusions.tex" 1775570996 940 b0517352cfd2e253989379fe5256c902 ""
   "sections/experiment_intro.tex" 1775568416 1295 dffa79f9d4a24812450214e1f96afb3a ""
   "sections/experiment_results.tex" 1775570666 4036 94f55f2a14ebb2683e465eb056cf64b8 ""
   (generated)

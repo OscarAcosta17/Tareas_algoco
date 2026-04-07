@@ -1,5 +1,1 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es un párrafo breve (máximo 1/4 de página).}
-\end{mdframed}
-
-Escriba una conclusión breve que interprete los resultados más importantes. Cada afirmación debe estar respaldada por los datos presentados.
+En conclusión, los resultados experimentales demuestran que una mejor cota asintótica teórica no siempre significa un mejor rendimiento en la práctica. En las matrices, el método \texttt{Naive} fue consistentemente más rápido y usó menos memoria que \texttt{Strassen} para $N \le 1024$, ya que el peso de hacer tantas llamadas recursivas elimina la ventaja matemática del algoritmo. Por otra parte, en el ordenamiento se ve claramente el compromiso entre tiempo y espacio: \texttt{ Merge Sort} asegura siempre un buen tiempo a costa de requerir mucha memoria extra ($\mathcal{O}(n)$), mientras que los métodos como \texttt{Quick Sort} ahorran memoria, pero pueden colapsar a tiempos de $\mathcal{O}(n^2)$ dependiendo de si los datos ya vienen ordenados. Todo esto confirma que elegir el algoritmo ideal depende totalmente del tamaño de la entrada, de la memoria disponible en la máquina y de cómo vengan distribuidos los datos.
