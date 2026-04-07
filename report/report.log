@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 09:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1552,17 +1552,51 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 [1{C:/Users/oscar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/enc/dvips/base/8r.enc}
 
 ]
-Overfull \hbox (37.52094pt too wide) in paragraph at lines 14--15
-\T1/futs/m/n/10.95 de-be re-fe-rir a las fi-gu-ras ge-ne-ra-das en `co-de/matrix_multiplication/data/plots/` y `co-de/sorting/data/plots/`. 
- []
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 5.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 5.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 5.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 5.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 5.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 5.
+<../code/sorting/plots/tiempo_vs_n_D7.png, id=36, 919.9971pt x 455.301pt>
+File: ../code/sorting/plots/tiempo_vs_n_D7.png Graphic file (type png)
+<use ../code/sorting/plots/tiempo_vs_n_D7.png>
+Package pdftex.def Info: ../code/sorting/plots/tiempo_vs_n_D7.png  used on input line 9.
+(pdftex.def)             Requested size: 354.02342pt x 175.20457pt.
+<../code/sorting/plots/memoria_vs_n_D7.png, id=39, 922.8879pt x 455.301pt>
+File: ../code/sorting/plots/memoria_vs_n_D7.png Graphic file (type png)
+<use ../code/sorting/plots/memoria_vs_n_D7.png>
+Package pdftex.def Info: ../code/sorting/plots/memoria_vs_n_D7.png  used on input line 18.
+(pdftex.def)             Requested size: 354.02342pt x 174.65575pt.
 
+
+[2 <../code/sorting/plots/tiempo_vs_n_D7.png>]
+<../code/matrix_multiplication/plots/tiempo_vs_n_matrices.png, id=50, 734.2632pt x 455.301pt>
+File: ../code/matrix_multiplication/plots/tiempo_vs_n_matrices.png Graphic file (type png)
+<use ../code/matrix_multiplication/plots/tiempo_vs_n_matrices.png>
+Package pdftex.def Info: ../code/matrix_multiplication/plots/tiempo_vs_n_matrices.png  used on input line 30.
+(pdftex.def)             Requested size: 354.02342pt x 219.52156pt.
+
+
+[3 <../code/sorting/plots/memoria_vs_n_D7.png> <../code/matrix_multiplication/plots/tiempo_vs_n_matrices.png>]
+<../code/matrix_multiplication/plots/memoria_vs_n_matrices.png, id=59, 728.4816pt x 455.301pt>
+File: ../code/matrix_multiplication/plots/memoria_vs_n_matrices.png Graphic file (type png)
+<use ../code/matrix_multiplication/plots/memoria_vs_n_matrices.png>
+Package pdftex.def Info: ../code/matrix_multiplication/plots/memoria_vs_n_matrices.png  used on input line 39.
+(pdftex.def)             Requested size: 354.02342pt x 221.26534pt.
 ) (sections/conclusions.tex)
 
 LaTeX Warning: Empty bibliography on input line 55.
 
 
 
-[2] (report.aux
+[4 <../code/matrix_multiplication/plots/memoria_vs_n_matrices.png>] (report.aux
 LaTeX Info: Redefining \sptext on input line 14.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
@@ -1573,23 +1607,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9F014D8548A379B0748383F91CE3555E;406.
+(rerunfilecheck)             Checksum: 8740BF9F730D924C1348F20C0E66FD6F;785.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55680 strings out of 467875
- 1277395 string characters out of 5417983
- 2256211 words of memory out of 5000000
- 83742 multiletter control sequences out of 15000+600000
- 692220 words of font info for 92 fonts, out of 8000000 for 9000
+ 55781 strings out of 467875
+ 1280062 string characters out of 5417983
+ 2256833 words of memory out of 5000000
+ 83821 multiletter control sequences out of 15000+600000
+ 722748 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,11n,110p,7207b,2138s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\oscar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (2 pages, 68308 bytes).
+ 107i,11n,110p,7207b,2142s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\oscar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/public/fourier/fourier-mcl.pfb><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/public/fourier/fourier-ms.pfb><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/oscar/AppData/Local/Programs/MiKTeX2/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on report.pdf (4 pages, 393306 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
