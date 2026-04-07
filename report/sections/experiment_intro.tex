@@ -1,5 +1,13 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es de media página.}
-\end{mdframed}
+El la realización de esta tarea se utilizó un solo computador de las siguientes especificaciones:
 
-Especifique el hardware y software utilizado para realizar los experimentos (por ejemplo, procesador, memoria RAM, sistema operativo, compilador y versión). Incluya una mención breve de los datasets utilizados, los cuales son los descritos en el enunciado de la tarea.
+\begin{itemize}
+    \item \textbf{Procesador:} AMD Ryzen 5 4500U con Radeon Graphics (2.38 GHz)
+    \item \textbf{Memoria RAM:} 16 GB
+    \item \textbf{Sistema Operativo:} Windows 11
+    \item \textbf{Entorno de ejecución:} Subsistema de Windows para Linux (WSL) versión 2.6.3.0
+    \item \textbf{Compilador:} GCC (g++)
+\end{itemize}
+
+Con respecto los datasets utilizados corresponden a los descritos en el enunciado de la tarea, pero es importante mencionar que para los algoritmos de ordenamiento no se ejecutó la totalidad de los casos más grandes, debido a que superaban las 4 horas de ejecución en  \texttt{ Quick Sort}, debido a que la tendencia de las curvas de rendimiento entorno a la memoria y tiempo ya eran claramente reconocibles con las dimensiones anteriores.
+
+Finalmente, el tiempo de ejecución se cronometró con la librería \texttt{<chrono>}. Para evaluar la complejidad espacial y evadir la contaminación por el reciclaje de memoria de WSL, se aplicó una estimación algorítmica unificada en ambos experimentos: se determinó la memoria total sumando el peso de la estructura base (\texttt{std::vector}) y el espacio auxiliar dinámico demandado por cada algoritmo.
