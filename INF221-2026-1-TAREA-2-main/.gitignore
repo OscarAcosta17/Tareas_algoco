@@ -8,9 +8,10 @@ code/matrix_multiplication/data/matrix_input/*.txt
 !code/matrix_multiplication/data/matrix_input/16_densa_D0_a_1.txt
 !code/matrix_multiplication/data/matrix_input/16_densa_D0_a_2.txt
 
-#esto es extra para no llenar de basura el repositorio que cree para esta tarea.
-code/sorting/data/array_output/
-code/matrix_multiplication/data/matrix_output/
-
-code/sorting/data/array_input/
-code/matrix_multiplication/data/matrix_input/
+# PDF LATEX build files
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml
+*.toc
