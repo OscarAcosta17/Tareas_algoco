@@ -4,7 +4,7 @@
 #include <fstream>
 #include <chrono>
 #include <filesystem>
-#include <sys/resource.h> // Necesario para medir uso de memoria en Linux/Mac
+#include <sys/resource.h>
 
 using namespace std;
 namespace fs = std::filesystem;
@@ -20,9 +20,12 @@ struct Anime {
     vector<Capitulo> capitulos;
 };
 
+// Firmas de los algoritmos
 long long runBruteForce(int n, long long M, long long E, const vector<Anime>& animes);
+long long runGreedy1(int n, long long M, long long E, const vector<Anime>& animes);
+// long long runGreedy2(...); 
+// long long runDynamicProgramming(...);
 
-// Función para obtener la memoria RAM máxima utilizada (Resident Set Size) en KB
 long long getMemoryUsageKB() {
     struct rusage usage;
     getrusage(RUSAGE_SELF, &usage);
@@ -30,6 +33,27 @@ long long getMemoryUsageKB() {
 }
 
 int main() {
+    int opcion;
+    cout << "Selecciona el algoritmo a ejecutar:\n";
+    cout << "1. Fuerza Bruta\n";
+    cout << "2. Greedy 1\n";
+    cout << "3. Greedy 2 (Proximamente)\n";
+    cout << "4. Programacion Dinamica (Proximamente)\n";
+    cout << "Opcion: ";
+    if (!(cin >> opcion)) return 1;
+
+    string prefixOut, measFileName;
+    if (opcion == 1) {
+        prefixOut = "bf_";
+        measFileName = "measurements_brute_force.txt";
+    } else if (opcion == 2) {
+        prefixOut = "g1_";
+        measFileName = "measurements_greedy1.txt";
+    } else {
+        cout << "Opcion no valida o en desarrollo.\n";
+        return 0;
+    }
+
     string inputDir = "data/inputs/";
     string outputDir = "data/outputs/";
     string measDir = "data/measurements/";
@@ -37,8 +61,7 @@ int main() {
     if (!fs::exists(outputDir)) fs::create_directories(outputDir);
     if (!fs::exists(measDir)) fs::create_directories(measDir);
 
-    // Abrimos un solo archivo para todas las mediciones de Fuerza Bruta
-    ofstream measFile(measDir + "measurements_brute_force.txt");
+    ofstream measFile(measDir + measFileName);
     if (!measFile) {
         cerr << "Error al crear archivo de mediciones.\n";
         return 1;
@@ -70,23 +93,24 @@ int main() {
             file.close();
 
             auto start = chrono::high_resolution_clock::now();
-            long long maxSatisfaccion = runBruteForce(n, M, E, animes);
-            auto end = chrono::high_resolution_clock::now();
+            long long maxSatisfaccion = 0;
             
+            if (opcion == 1) maxSatisfaccion = runBruteForce(n, M, E, animes);
+            else if (opcion == 2) maxSatisfaccion = runGreedy1(n, M, E, animes);
+
+            auto end = chrono::high_resolution_clock::now();
             chrono::duration<double, milli> duration = end - start;
             long long memoryKB = getMemoryUsageKB();
 
-            // Guardamos el output específico del caso
-            ofstream outFile(outputDir + "bf_" + filename);
+            ofstream outFile(outputDir + prefixOut + filename);
             if (outFile) {
                 outFile << maxSatisfaccion << "\n";
                 outFile.close();
             }
 
-            // Registramos las métricas en el archivo consolidado
             measFile << filename << " " << duration.count() << " " << memoryKB << "\n";
-            
-            cout << "Procesado: " << filename << " | Satisfaccion Optima: " << maxSatisfaccion << "\n";
+            measFile.flush(); // Obliga a guardar en el disco duro al instante
+            cout << "Procesado: " << filename << " | Satisfaccion: " << maxSatisfaccion << "\n";
         }
     }
     

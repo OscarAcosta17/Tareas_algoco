@@ -1,0 +1,4 @@
+Archivo Tiempo(ms) Memoria(KB)
+testcases_100_1.txt 1654.33 3584
+testcases_100_2.txt 7279.93 3712
+testcases_100_3.txt 0.011316 3712
