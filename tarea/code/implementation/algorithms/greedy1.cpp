@@ -20,15 +20,14 @@ struct Anime {
  * Idea base del algoritmo: "Fractional Knapsack Problem Greedy Approach" adaptada a múltiples restricciones.
  * Referencia teórica general: https://www.geeksforgeeks.org/fractional-knapsack-problem/
  * * ADAPTACIÓN:
- * Dado que un anime solo permite tomar prefijos completos de capítulos, se generaron 
+ * Como un anime solo permite tomar prefijos completos de capítulos, se generaron 
  * "Opciones de Prefijo" como si fueran objetos indivisibles de una mochila.
- * La rentabilidad (ratio) de cada prefijo se calculó como la satisfacción total (incluyendo bono) 
- * dividida por la suma del tiempo y la energía consumida. Luego se ordenan de forma decreciente.
+ * La rentabilidad de cada prefijo la calculo ahora como la satisfacción total+ bono dividida por la suma del tiempo y la energía consumida y ordenando de forma decreciente.
  */
 
 struct PrefixOption {
     int animeIdx;
-    int k; // Cantidad de capitulos tomados
+    int k; // Cantidad de capitulos
     long long totalT;
     long long totalE;
     long long totalV;
@@ -72,7 +71,6 @@ long long runGreedy1(int n, long long M, long long E, const vector<Anime>& anime
     long long maxSatisfaccion = 0;
 
     for (const auto& opt : options) {
-        // Validar que el anime no haya sido procesado y que los recursos alcancen
         if (!animeTomado[opt.animeIdx] && (currentM + opt.totalT <= M) && (currentE + opt.totalE <= E)) {
             
             animeTomado[opt.animeIdx] = true;

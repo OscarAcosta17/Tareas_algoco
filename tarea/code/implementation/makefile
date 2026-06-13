@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -O3
 
-SRCS = general.cpp algorithms/brute-force.cpp algorithms/greedy1.cpp
+SRCS = general.cpp algorithms/brute-force.cpp algorithms/greedy1.cpp algorithms/greedy2.cpp algorithms/dynamic-programming.cpp
 TARGET = animaraton
 
 all: $(TARGET) run

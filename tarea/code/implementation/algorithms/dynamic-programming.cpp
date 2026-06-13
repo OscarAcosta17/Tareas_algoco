@@ -12,11 +12,9 @@ struct Anime { string nombre; int q; long long b; vector<Capitulo> capitulos; };
  * Idea base del algoritmo: "0/1 Knapsack Problem with Two Constraints" (2D Dynamic Programming).
  * Referencia teórica general: https://www.geeksforgeeks.org/2d-knapsack-problem/
  * * ADAPTACIÓN:
- * El problema clásico se adaptó para procesar agrupaciones mutuamente excluyentes (animes).
+ * El problema clásico se adaptó para procesar agrupaciones mutuamente excluyentes.
  * Por cada anime, solo se puede escoger exactamente un prefijo válido (desde 0 hasta q_i).
- * Para evitar seleccionar múltiples prefijos de un mismo anime y acumular sus valores, 
- * se utiliza una matriz temporal que se actualiza leyendo estrictamente desde el 
- * estado de la iteración anterior, simulando un enfoque de Multiple-Choice Knapsack.
+ * Para evitar seleccionar múltiples prefijos de un mismo anime y acumular sus valores, se utiliza una matriz temporal que se actualiza leyendo estrictamente desde el estado de la iteración anterior, simulando un enfoque de Multiple-Choice Knapsack.
  */
 
 long long runDynamicProgramming(int n, long long M, long long E, const vector<Anime>& animes) {
@@ -34,7 +32,6 @@ long long runDynamicProgramming(int n, long long M, long long E, const vector<An
             sumE += animes[i].capitulos[k-1].c;
             sumV += animes[i].capitulos[k-1].v;
 
-            // Poda: si este prefijo por sí solo excede la capacidad máxima global, no lo procesamos
             if (sumT > M || sumE > E) break;
 
             long long bonus = (k == animes[i].q) ? animes[i].b : 0;

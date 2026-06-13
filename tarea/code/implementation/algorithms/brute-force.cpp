@@ -20,13 +20,10 @@ struct Anime {
  * Idea base del algoritmo: "0/1 Knapsack Problem using Backtracking" 
  * Referencia teórica general: https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
  * * ADAPTACIÓN:
- * El concepto clásico de tomar o no tomar un elemento de la mochila fue adaptado 
- * para iterar sobre la cantidad de elementos a tomar (prefijos) de una lista dependiente (los animes).
- * Se modificó para manejar dos restricciones simultáneas (Tiempo M y Energía E) en lugar de un solo peso,
- * y se integró la lógica de sumar un bono extra condicional 'b' si se toman todos los capítulos 'q' de un anime.
+ * El concepto de tomar o no tomar un elemento de la mochila fue adaptado para iterar sobre la cantidad de elementos a tomar de una lista dependiente d animes
+ * Se modificó para manejar dos restricciones simultáneas (Tiempo M y Energía E) en lugar de un solo peso y se añadio la lógica de sumar un bono extra condicional 'b' si se toman todos los capítulos 'q' de un anime.
  */
 long long solve(int idx, long long currentM, long long currentE, int n, long long M, long long E, const vector<Anime>& animes) {
-    // Caso base: si ya evaluamos todos los animes
     if (idx == n) return 0;
 
     // Opción 1: No ver ningún capítulo de este anime, pasamos al siguiente

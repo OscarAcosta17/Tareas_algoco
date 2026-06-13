@@ -16,7 +16,6 @@ def generar_caso_prueba(n, id_caso):
     nombre_archivo = f"testcases_{n}_{id_caso}.txt"
     ruta_archivo = os.path.join(OUTPUT_DIR, nombre_archivo)
     
-    # Restricciones globales
     M = random.randint(1, 3000)
     E = random.randint(1, 500)
     

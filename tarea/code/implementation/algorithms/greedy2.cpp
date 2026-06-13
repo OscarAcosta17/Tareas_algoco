@@ -12,10 +12,8 @@ struct Anime { string nombre; int q; long long b; vector<Capitulo> capitulos; };
  * Idea base del algoritmo: "Fractional Knapsack Problem Greedy Approach"
  * Referencia teórica general: https://www.geeksforgeeks.org/fractional-knapsack-problem/
  * * ADAPTACIÓN:
- * A diferencia de Greedy 1 (que consideraba el costo combinado), el criterio local aquí 
- * es maximizar puramente la satisfacción por minuto de visualización, ignorando el 
- * costo energético al ordenar las opciones. La restricción de energía actúa 
- * únicamente como un filtro de validez al momento de intentar insertar el prefijo.
+ * A diferencia de Greedy 1, el criterio aquí es maximizar la satisfacción por minuto de visualización, ignorando el costo energético al ordenar las opciones. 
+ * La restricción de energía actúa únicamente como un filtro de validez al momento de intentar insertar el prefijo.
  */
 
 struct PrefixOption2 {
@@ -45,8 +43,6 @@ long long runGreedy2(int n, long long M, long long E, const vector<Anime>& anime
             if (sumT <= M && sumE <= E) {
                 long long bonus = (k == animes[i].q) ? animes[i].b : 0;
                 long long totalVal = sumV + bonus;
-                
-                // Nuevo criterio: Satisfaccion dividida SOLO por el Tiempo
                 double currentRatio = static_cast<double>(totalVal) / sumT;
                 
                 options.push_back({i, k, sumT, sumE, totalVal, currentRatio});
