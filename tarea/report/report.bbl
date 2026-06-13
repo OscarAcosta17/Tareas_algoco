@@ -16,5 +16,79 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{geeks_knapsack_backtracking}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={GeeksforGeeks},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/}}
+      \field{title}{0/1 Knapsack Problem using Backtracking}
+      \field{year}{2024}
+    \endentry
+    \entry{geeks_2d_knapsack}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={GeeksforGeeks},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.geeksforgeeks.org/2d-knapsack-problem/}}
+      \field{title}{2D Knapsack Problem / Multiple Constraints Knapsack}
+      \field{year}{2024}
+    \endentry
+    \entry{geeks_fractional_greedy}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={GeeksforGeeks},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.geeksforgeeks.org/fractional-knapsack-problem/}}
+      \field{title}{Fractional Knapsack Problem: Greedy Approach}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

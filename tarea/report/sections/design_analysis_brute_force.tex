@@ -1,0 +1,23 @@
+\subsubsection{Fuerza Bruta (Backtracking)}
+
+Para la Fuerza Bruta se utilizó una estrategia de exploración exhaustiva mediante recursión (\textit{Backtracking})~\cite{geeks_knapsack_backtracking}. El problema se pensó como un árbol de decisión donde cada nivel representa un anime diferente. En cada nivel, el algoritmo tiene $q_i + 1$ opciones disponibles: elegir no ver ningún capítulo, o ver desde el primero hasta el capítulo $k$ (con $k$ entre 1 y $q_i$).
+
+Para evitar recorrer ramas completamente innecesarias y acelerar el proceso, se programó una poda por factibilidad dentro del ciclo de llamadas. Como cada capítulo consume tiempo y energía positivos, en el momento en que la suma parcial de cualquiera de estos dos recursos supera el límite global de la mochila ($M$ o $E$), el algoritmo rompe el ciclo de inmediato con un \textit{break}. Esto evita seguir profundizando en soluciones que ya son inválidas para el sistema.
+
+\paragraph{Complejidad Temporal Teórica:} 
+En el peor caso posible, donde todas las combinaciones generadas fueran válidas y no operara la poda por recursos, el algoritmo tendría que revisar absolutamente todas las opciones. Como para cada anime hay $q_i + 1$ decisiones posibles, el total de hojas a evaluar en el árbol sería el producto de las opciones de todos los animes:
+\begin{equation}
+T(N) = O\left(\prod_{i=1}^{N} (q_i + 1)\right)
+\end{equation}
+Considerando las restricciones fijas de la tarea, donde cada anime puede tener como máximo 30 capítulos ($q_i \le 30$), el número de opciones por nivel se reduce a una constante máxima de 31. Por lo tanto, la complejidad en el peor caso se comporta de forma puramente exponencial:
+\begin{equation}
+T(N) = O(31^N)
+\end{equation}
+Esto explica numéricamente por qué este enfoque se vuelve inutilizable al aumentar ligeramente el número de series.
+
+\paragraph{Complejidad Espacial Teórica:}
+La memoria que consume este enfoque depende únicamente de la pila de llamadas del sistema (\textit{call stack}) debido a la recursión. Como el algoritmo procesa un anime a la vez antes de seguir bajando en la rama del árbol, la profundidad máxima de la pila es igual a la cantidad total de animes $N$. En consecuencia, la complejidad espacial teórica es lineal:
+\begin{equation}
+S(N) = O(N)
+\end{equation}
+Esto calza perfectamente con los resultados de las mediciones, donde el uso de memoria de la Fuerza Bruta se mantuvo bajísimo y plano a lo largo de su ejecución.

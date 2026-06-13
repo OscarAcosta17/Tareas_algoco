@@ -1,0 +1,24 @@
+\subsubsection{Greedy}
+
+Los algoritmos Greedy se diseñaron transformando el problema de los prefijos consecutivos en una lista de opciones independientes. Para cumplir con la regla de que solo se puede elegir un único prefijo por cada serie (y no acumular capítulos sueltos de un mismo anime), se implementó un vector booleano de control. Cuando el algoritmo selecciona una opción de prefijo para un anime específico, ese anime se marca como ocupado y se ignoran todas sus demás opciones durante el resto del recorrido lineal.
+
+\paragraph{Criterios Locales de Selección:}
+Se implementaron dos variantes con enfoques distintos para ordenar y elegir las opciones de la lista:
+\begin{itemize}
+    \item \textbf{Greedy 1 (Costo Combinado):} Este criterio busca aprovechar al máximo ambos recursos disponibles. Ordena todos los prefijos de mayor a menor según el ratio de la satisfacción total (incluyendo el bono si se completa la serie) dividido por la suma del tiempo y la energía que consume el prefijo: $\text{Ratio} = \frac{V_{\text{total}}}{T_{\text{total}} + E_{\text{total}}}$~\cite{geeks_fractional_greedy}.
+    \item \textbf{Greedy 2 (Rentabilidad Temporal):} Diseñado pensando en que el tiempo de transmisión es el factor más crítico. El criterio ordena las opciones usando únicamente los minutos invertidos en el denominador: $\text{Ratio} = \frac{V_{\text{total}}}{T_{\text{total}}}$. El costo de energía se ignora por completo en la ordenación y solo se usa como un filtro al momento de intentar meter el prefijo en la mochila.
+\end{itemize}
+
+\paragraph{Complejidad Temporal Teórica:}
+El algoritmo Greedy ejecuta tres pasos seguidos. Primero, genera todas las opciones posibles de prefijos para los $N$ animes, lo que toma un tiempo proporcional al total de capítulos globales ($K = \sum q_i$). El paso más pesado y determinante es ordenar esta lista completa, lo que se hace con el ordenamiento estándar de C++ (\textit{Introsort}) con una complejidad de $O(K \log K)$. Finalmente, se hace un barrido lineal sobre la lista ordenada que toma tiempo $O(K)$. Por lo tanto, la complejidad temporal total queda acotada por la etapa de ordenación:
+\begin{equation}
+T(N) = O(K \log K)
+\end{equation}
+Como el enunciado limita el total de capítulos globales a un máximo estricto de 700 ($\sum q_i \le 700$), el valor de $K$ es muy pequeño, explicando por qué los tiempos medidos en tus gráficas son prácticamente instantáneos.
+
+\paragraph{Complejidad Espacial Teórica:}
+La memoria utilizada se limita a la estructura lineal (vector) donde se guardan todos los prefijos generados antes de ordenarlos. Como solo se almacenan datos numéricos planos por cada opción, la complejidad espacial es lineal respecto al total de capítulos:
+\begin{equation}
+S(N) = O(K)
+\end{equation}
+Esto justifica el bajísimo consumo de RAM que se observó en los experimentos para ambas heurísticas.

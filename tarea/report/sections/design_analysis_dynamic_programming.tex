@@ -1,0 +1,23 @@
+\subsubsection{Programación Dinámica}
+
+Para encontrar la solución exacta de forma eficiente en instancias grandes, se adaptó el problema clásico de la mochila bidimensional (2D Knapsack) para manejar grupos de opciones mutuamente excluyentes (\textit{Multiple-Choice Knapsack Problem})~\cite{geeks_2d_knapsack}. El estado del problema se representa mediante una matriz \texttt{dp[m][e]}, la cual guarda la máxima satisfacción alcanzable usando exactamente $m$ minutos y $e$ unidades de energía.
+
+Para asegurar que el algoritmo elija a lo sumo un solo prefijo por cada anime (evitando sumar capítulos de la misma serie en un mismo paso), se utilizó una técnica de doble matriz. En cada iteración de un anime $i$, se trabaja sobre una matriz temporal llamada \texttt{next\_dp} que inicia como una copia de \texttt{dp}. Los nuevos estados se calculan leyendo estrictamente los valores consolidados del anime anterior almacenados en \texttt{dp}, y los resultados válidos se guardan en \texttt{next\_dp}. Al terminar de revisar todos los prefijos del anime actual, se actualiza la matriz base haciendo \texttt{dp = next\_dp}. La relación de recurrencia para un prefijo con costos $t_k$, $c_k$ y valor $v_k$ es:
+\begin{equation}
+\text{next\_dp}[m][e] = \max \left( \text{next\_dp}[m][e],\, \text{dp}[m - t_k][e - c_k] + v_k \right)
+\end{equation}
+para todo par $(m, e)$ válido donde $t_k \le m \le M$ y $c_k \le e \le E$.
+
+\paragraph{Complejidad Temporal Teórica:}
+El algoritmo ejecuta ciclos aninados: el primero recorre los $N$ animes, el segundo pasa por los $q_i$ prefijos de la serie actual, y los ciclos internos recorren la matriz de capacidades desde los límites máximos ($M$ y $E$) hacia abajo. La complejidad temporal total es:
+\begin{equation}
+T(N, M, E) = O\left(\sum_{i=1}^{N} q_i \cdot M \cdot E\right) = O(K \cdot M \cdot E)
+\end{equation}
+Esta complejidad es de naturaleza \textit{pseudo-polinomial}, lo que significa que el tiempo de ejecución depende directamente del tamaño de la mochila ($M \times E$). Esto explica por qué en tus experimentos el tiempo varía según el archivo y no aumenta estrictamente de forma lineal con $N$.
+
+\paragraph{Complejidad Espacial Teórica:}
+Al usar la optimización de doble matriz (\texttt{dp} y \texttt{next\_dp}), no se necesita una tercera dimensión para almacenar los estados de cada anime por separado. El programa solo mantiene dos matrices bidimensionales de tamaño $(M+1) \times (E+1)$ en memoria al mismo tiempo. Por lo tanto, la complejidad espacial es totalmente independiente de la cantidad de animes $N$:
+\begin{equation}
+S(M, E) = O(M \times E)
+\end{equation}
+Esto demuestra teóricamente por qué el uso de memoria en tus experimentos dio exactamente una línea recta horizontal fija en los 21.6 MB para todos los casos de prueba.

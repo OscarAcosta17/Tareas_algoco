@@ -1,5 +1,25 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es de media página.}
-\end{mdframed}
+Para evaluar el rendimiento y la correctitud de los algoritmos implementados, los experimentos se ejecutaron en un entorno con las siguientes especificaciones de hardware, software y conjuntos de datos:
 
-Especifique el hardware y software utilizado para realizar los experimentos (por ejemplo, procesador, memoria RAM, sistema operativo, compilador y versión). Incluya una mención breve de los datasets utilizados, los cuales son los descritos en el enunciado de la tarea.
+\subsection{Entorno de Hardware y Software}
+Las pruebas experimentales se llevaron a cabo en un equipo con las siguientes características técnicas:
+\begin{itemize}
+    \item \textbf{Procesador:} AMD Ryzen 5 4500U with Radeon Graphics (2.38 GHz).
+    \item \textbf{Memoria RAM:} 16GB DDR4.
+    \item \textbf{Sistema Operativo:} Windows 11 con el Subsistema de Windows para Linux (WSL) ejecutando la distribución de Ubuntu.
+    \item \textbf{Compilador:} \texttt{g++} (GCC) bajo el estándar C++17, con automatización de compilación y ejecución mediante directivas \texttt{make}.
+    \item \textbf{Entorno de Análisis:} Entorno Python 3 con las librerías \texttt{pandas} y \texttt{matplotlib} para el procesamiento de las mediciones y la generación de gráficos.
+\end{itemize}
+
+\subsection{Conjunto de Datos (Datasets)}
+Los casos de prueba fueron generados de manera sintética y automatizada mediante el script 
+
+\texttt{testcases\_generator.py}. Cada instancia generada respeta estrictamente las restricciones de dominio establecidas para el problema AniMaraton: los minutos máximos se encuentran en el rango $1 \le M \le 3000$ y la energía en $1 \le E \le 500$. Adicionalmente, se aseguró que la cantidad de capítulos por serie no supere los 30 ($q_i \le 30$), con un tope global máximo de 700 capítulos por archivo.
+
+El \textit{dataset} se dividió en tres categorías de evaluación:
+\begin{itemize}
+    \item \textbf{Casos pequeños ($N \in \{3, 5, 8\}$):} Utilizados para validar la exactitud del algoritmo de Fuerza Bruta y confirmar que sus resultados coincidan con la solución óptima de la Programación Dinámica.
+    \item \textbf{Casos medianos ($N \in \{20, 40, 80\}$):} Empleados para comparar la calidad de las soluciones heurísticas (Greedy) frente a la solución óptima.
+    \item \textbf{Casos grandes ($N \in \{100, 150, 200\}$):} Destinados a pruebas de estrés para medir el rendimiento y escalabilidad de los algoritmos eficientes, escenarios en los cuales se asume empírica y teóricamente que la Fuerza Bruta se vuelve inejecutable en tiempos razonables.
+\end{itemize}
+
+\input{sections/design_analysis}
